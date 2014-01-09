@@ -18,10 +18,14 @@
 		04393CF317D5DDBE002FCB6A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04393CF217D5DDBE002FCB6A /* Default-568h@2x.png */; };
 		04393CF617D5DDBE002FCB6A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04393CF517D5DDBE002FCB6A /* ViewController.m */; };
 		04393CF917D5DDBE002FCB6A /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04393CF717D5DDBE002FCB6A /* ViewController.xib */; };
-		04393D0217D5DDD3002FCB6A /* DOHexKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 04393D0117D5DDD3002FCB6A /* DOHexKeyboard.m */; };
+		04393D0217D5DDD3002FCB6A /* DOKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 04393D0117D5DDD3002FCB6A /* DOKeyboard.m */; };
 		04393D0417D5DDE8002FCB6A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04393D0317D5DDE8002FCB6A /* QuartzCore.framework */; };
 		0488D76917D71F9E0095CFE9 /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = 0488D76717D71F9E0095CFE9 /* delete.png */; };
 		0488D76A17D71F9E0095CFE9 /* delete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0488D76817D71F9E0095CFE9 /* delete@2x.png */; };
+		DB4A51FF187BF00700527142 /* DOKConfigurationHex.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4A51FE187BF00700527142 /* DOKConfigurationHex.m */; };
+		DB4A5202187D05BB00527142 /* DOKeyboardHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4A5201187D05BB00527142 /* DOKeyboardHelpers.m */; };
+		DB4A5205187D8FF100527142 /* DOKConfigurationNumericNormal.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4A5204187D8FF100527142 /* DOKConfigurationNumericNormal.m */; };
+		DB4A5208187D91B200527142 /* DOKeyItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4A5207187D91B200527142 /* DOKeyItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,11 +45,19 @@
 		04393CF417D5DDBE002FCB6A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		04393CF517D5DDBE002FCB6A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		04393CF817D5DDBE002FCB6A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
-		04393D0017D5DDD3002FCB6A /* DOHexKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOHexKeyboard.h; sourceTree = "<group>"; };
-		04393D0117D5DDD3002FCB6A /* DOHexKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOHexKeyboard.m; sourceTree = "<group>"; };
+		04393D0017D5DDD3002FCB6A /* DOKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOKeyboard.h; sourceTree = "<group>"; };
+		04393D0117D5DDD3002FCB6A /* DOKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOKeyboard.m; sourceTree = "<group>"; };
 		04393D0317D5DDE8002FCB6A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		0488D76717D71F9E0095CFE9 /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
 		0488D76817D71F9E0095CFE9 /* delete@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delete@2x.png"; sourceTree = "<group>"; };
+		DB4A51FD187BF00700527142 /* DOKConfigurationHex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOKConfigurationHex.h; sourceTree = "<group>"; };
+		DB4A51FE187BF00700527142 /* DOKConfigurationHex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOKConfigurationHex.m; sourceTree = "<group>"; };
+		DB4A5200187D05BB00527142 /* DOKeyboardHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOKeyboardHelpers.h; sourceTree = "<group>"; };
+		DB4A5201187D05BB00527142 /* DOKeyboardHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOKeyboardHelpers.m; sourceTree = "<group>"; };
+		DB4A5203187D8FF100527142 /* DOKConfigurationNumericNormal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOKConfigurationNumericNormal.h; sourceTree = "<group>"; };
+		DB4A5204187D8FF100527142 /* DOKConfigurationNumericNormal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOKConfigurationNumericNormal.m; sourceTree = "<group>"; };
+		DB4A5206187D91B200527142 /* DOKeyItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOKeyItem.h; sourceTree = "<group>"; };
+		DB4A5207187D91B200527142 /* DOKeyItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOKeyItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,8 +134,16 @@
 		04393CFF17D5DDD2002FCB6A /* DOHexKeyboard */ = {
 			isa = PBXGroup;
 			children = (
-				04393D0017D5DDD3002FCB6A /* DOHexKeyboard.h */,
-				04393D0117D5DDD3002FCB6A /* DOHexKeyboard.m */,
+				04393D0017D5DDD3002FCB6A /* DOKeyboard.h */,
+				04393D0117D5DDD3002FCB6A /* DOKeyboard.m */,
+				DB4A5206187D91B200527142 /* DOKeyItem.h */,
+				DB4A5207187D91B200527142 /* DOKeyItem.m */,
+				DB4A51FD187BF00700527142 /* DOKConfigurationHex.h */,
+				DB4A51FE187BF00700527142 /* DOKConfigurationHex.m */,
+				DB4A5203187D8FF100527142 /* DOKConfigurationNumericNormal.h */,
+				DB4A5204187D8FF100527142 /* DOKConfigurationNumericNormal.m */,
+				DB4A5200187D05BB00527142 /* DOKeyboardHelpers.h */,
+				DB4A5201187D05BB00527142 /* DOKeyboardHelpers.m */,
 				0488D76617D71F9E0095CFE9 /* images */,
 			);
 			name = DOHexKeyboard;
@@ -207,10 +227,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB4A51FF187BF00700527142 /* DOKConfigurationHex.m in Sources */,
+				DB4A5208187D91B200527142 /* DOKeyItem.m in Sources */,
 				04393CE917D5DDBE002FCB6A /* main.m in Sources */,
+				DB4A5202187D05BB00527142 /* DOKeyboardHelpers.m in Sources */,
 				04393CED17D5DDBE002FCB6A /* AppDelegate.m in Sources */,
 				04393CF617D5DDBE002FCB6A /* ViewController.m in Sources */,
-				04393D0217D5DDD3002FCB6A /* DOHexKeyboard.m in Sources */,
+				DB4A5205187D8FF100527142 /* DOKConfigurationNumericNormal.m in Sources */,
+				04393D0217D5DDD3002FCB6A /* DOKeyboard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
