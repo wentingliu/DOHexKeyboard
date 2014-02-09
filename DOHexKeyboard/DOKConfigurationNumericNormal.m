@@ -27,9 +27,9 @@
         NSMutableArray *keyFrames = [NSMutableArray array];
         // create and layout the top three rows
         NSArray *keyNames = @[@"7", @"8", @"9", @"-/+",
-                              @"4", @"5", @"6", @" ",
-                              @"1", @"2", @"3", @".",
-                              @"clear", @"0", @"*", @"return"];
+                              @"4", @"5", @"6", @"clear",
+                              @"1", @"2", @"3", @"*",
+                              @".", @"0", @" ", @"return"];
         NSUInteger DOKeyboardKeyTypePositiveOrNegative = 201;
         for (int row = 0; row < 4; row++) {
             for (int column = 0; column < 4; column++) {
@@ -42,7 +42,7 @@
                     key = createKeyWithText(@"clear");
                     key.tag = DOKeyboardKeyTypeClear;
                 } else if ([keyName isEqualToString:@"*"]) {
-                    key = createKeyWithNormal(@"*");
+                    key = createKeyWithImage([UIImage imageNamed:@"delete.png"]);
                     key.tag = DOKeyboardKeytypeDelete;
                 } else if ([keyName isEqualToString:@"return"]) {
                     key = createKeyWithText(@"return");
