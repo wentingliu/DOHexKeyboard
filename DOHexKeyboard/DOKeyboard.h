@@ -41,9 +41,9 @@ typedef struct {
     NSUInteger column;
 } DOKKeySpan;
 
-// DOKKeyFrame is a rect with in coordinate of keys.
-// Suppose a keyboard with 4 rows and 5 columns, and there 20 keys, so keyboard's size is {4, 5},
-// and the first key's DOKKeyFrame is {0, 0, 1, 1}, and the last key's is {3, 4, 1, 1}.
+// DOKKeyFrame is a rect in coordinate of keys.
+// Suppose a keyboard with 4 rows and 5 columns, and there are 20 keys, so keyboard's size is {4, 5},
+// the first key's DOKKeyFrame is {0, 0, 1, 1}, the last key's is {3, 4, 1, 1}.
 // If there is a key that spans two column then span of it is {1, 2}.
 typedef struct {
     DOKKeyOrigin origin;
