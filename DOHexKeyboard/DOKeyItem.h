@@ -8,6 +8,7 @@
 
 #import "DOKeyboard.h"
 
+// To be implemented
 @interface DOKeyItem : NSObject
 
 @end
