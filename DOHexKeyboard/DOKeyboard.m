@@ -161,9 +161,9 @@ DOKeyboardLayoutBlock const DOKeyboardLayoutDefault = ^(DOKeyboard *keyboard, NS
 // Replace the text of the textInput in textRange with string if the delegate approves
 - (void)textInput:(id <UITextInput>)textInput replaceTextAtTextRange:(UITextRange *)textRange withString:(NSString *)string {
     // Calculate the NSRange for the textInput text in the UITextRange textRange:
-    int startPos = [textInput offsetFromPosition:textInput.beginningOfDocument
+    NSInteger startPos = [textInput offsetFromPosition:textInput.beginningOfDocument
                                                          toPosition:textRange.start];
-    int length = [textInput offsetFromPosition:textRange.start
+    NSInteger length = [textInput offsetFromPosition:textRange.start
                                                          toPosition:textRange.end];
     NSRange selectedRange = NSMakeRange(startPos, length);
     

@@ -16,7 +16,10 @@
     if (self) {
         
         _keyCount = 16;
-        _keyboardSize = DOKeyboardNormalSize;
+        CGRect screenRect = [[UIScreen mainScreen] bounds];
+        CGFloat screenWidth = screenRect.size.width;
+        CGSize keyboardSize = (CGSize){screenWidth, 216};
+        _keyboardSize = keyboardSize;
         _keySpacing = 1;
         
         _columnCount = 4;
