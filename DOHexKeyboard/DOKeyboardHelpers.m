@@ -8,7 +8,6 @@
 
 #import "DOKeyboardHelpers.h"
 
-CGSize const DOKeyboardNormalSize = (CGSize){320, 216};
 CGSize const DOKKeyNormalSize = (CGSize){63, 53};
 CGFloat const DOKKeyNormalSpace = 1;
 

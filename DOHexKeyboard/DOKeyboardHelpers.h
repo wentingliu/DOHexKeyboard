@@ -8,7 +8,6 @@
 
 #import "DOKeyboard.h"
 
-extern CGSize const DOKeyboardNormalSize; // (320, 216)
 extern CGSize const DOKKeyNormalSize; // (63, 53)
 extern CGFloat const DOKKeyNormalSpace; // 1
 
